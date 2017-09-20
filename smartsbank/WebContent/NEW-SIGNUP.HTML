@@ -1,0 +1,279 @@
+	<!DOCTYPE html>
+<html>
+<head>
+<title> LOGIN</title>
+<link rel="icon" href="fevi.png" type="image/gif" sizes="16x16">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+
+
+body{
+  background-image: url('f.jpg');
+  background-repeat: no-repeat;
+}
+
+/*div main for form  */
+
+.con{
+height:100%;
+width:70%;
+margin-left:auto;
+margin-right: auto;
+overflow: auto;
+padding-right: 15px;
+opacity: rgba(255,255,255,1.0);
+margin-top: 2.8%;
+}
+
+/* center the form */
+.cen{
+	width:45%;
+
+}
+
+.mov{
+  padding-left: 45%;
+  margin-left: auto;
+}
+
+.w3-top{
+background-color: #EADDC0;
+}
+
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+    </li>
+    <li class="w3-left-align"><a href="newhome.html">HOME</a></li>
+    <li class="w3-hide-small"><a href="#about"><i class="fa fa-user"></i> ABOUT</a></li>
+    <li class="w3-hide-small"><a href="#banksmart"><i class="fa fa-handshake-o"></i> CUSTMOR CARE</a></li>
+
+    <li class="w3-hide-small"><a href="#"><i class="fa fa-user-circle-o"></i>LOGIN</a></li>
+     </nav>
+
+    <li class="w3-hide-small w3-right">
+      <a href="#" class="w3-hover-red">
+        <i class="fa fa-search"></i>
+      </a>
+    </li>
+  </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+    <ul class="w3-navbar w3-left-align w3-white">
+      <li><a href="#about" onclick="toggleFunction()">ABOUT</a></li>
+      <li><a href="#custmorcare" onclick="toggleFunction()">CUSTMOR CARE</a></li>
+      <li><a href="#Login" onclick="toggleFunction()">LOGIN</a></li>
+
+      <li><a href="#">SEARCH</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div  class="con">
+
+  <div class="small" style="border-radius:5px;height:300px;width:100%;background-repeat:no-repeat;position:relative;">
+    <img src="top3.jpg" height="300px" width="100%" style="border-radius:20px;">
+    <pre class="w3-xxlarge" style="position:absolute;top:25%;margin-left:30%;width:100%;font-family:Brush Script MT;color:white;
+    line-height:0.9em;color:#fff;text-shadow:2px 2px 0 #444;">
+       Not just Sign Up
+                  Grow Up With Us</pre>
+  </div>
+
+
+
+
+  <div class="w3-card-8" style="margin-top:10px;">
+<form action="signup" method="get">
+     <div class="w3-container  w3-blue w3-round-xlarge w3-center">
+       <h2>Personal Details</h2>
+       <div id="google_translate_element"></div>
+     </div>
+<div class="w3-container w3-row-padding" >
+	
+	
+	     <div class="w3-hover-text-blue">
+			<label>First Name</label>
+			<input class="w3-input w3-border" name="Full Name" type="text">
+		 </div> 
+		  <div class="w3-hover-text-blue">
+			<label>Last Name</label>
+			<input class="w3-input w3-border" name="Full Name2" type="text">
+		 </div> 
+	
+	
+		 <div class="w3-half w3-hover-text-blue">
+			<label>E-mail</label>
+			<input class="w3-input w3-border" name="E-mail" type="email">
+		 </div>
+		 
+		 
+		 <div class="w3-half w3-hover-text-blue">
+			<label>Date Of Birth</label>
+			<input class="w3-input w3-border" name="dob" type="date">
+		 </div> 
+		 
+		 
+		 <div class="w3-half w3-hover-text-blue">
+			<label>Phone Number</label>
+			<input class="w3-input w3-border" name="phone" type="text">
+		 </div> 
+		 
+		 
+		 <div class="w3-half w3-hover-text-blue">
+			<label>Name Of Father/Spouse</label>
+			<input class="w3-input w3-border" name="fathername" type="text">
+		 </div> 
+		 
+	</div>
+ </div> 
+		 
+ <div class="w3-card-8">
+
+		<div class="w3-container w3-green">
+		  <h2>Residential Address</h2>
+		</div>
+		
+		<div class="w3-container w3-row-padding" >
+		
+		<div class="w3-half w3-hover-text-green">
+			<label>Flat no/And BLDG Name</label>
+			<input class="w3-input w3-border" name="flat" type="text">
+		 </div> 
+		 
+		 <div class="w3-half w3-hover-text-green">
+			<label>Road No./Name</label>
+			<input class="w3-input w3-border" name="road" type="text">
+		 </div> 
+		  <div class="w3-half w3-hover-text-green">
+			<label>Area / Landmark</label>
+			<input class="w3-input w3-border" name="area" type="text">
+		 </div> 
+		  <div class="w3-half w3-hover-text-green">
+			<label>City</label>
+			<input class="w3-input w3-border" name="city" type="text">
+		 </div> 
+		 
+		 
+		<div class="w3-half w3-hover-text-green">
+			<label>Telephone</label>
+			<input class="w3-input w3-border" name="tp" type="text">
+		 </div> 
+		 
+		<div class="w3-half w3-hover-text-green">
+			<label>Pin-code</label>
+			<input class="w3-input w3-border" name="pin" type="text">
+
+		 </div> 
+	</div>		
+</div>
+
+
+<div class="w3-card-8">
+
+		<div class="w3-container w3-red">
+		  <h2>Account Details</h2>
+		</div>
+		
+		<div class="w3-container w3-row-padding" >
+		 <div class="w3-hover-text-red">
+			<label>Create User Name</label>
+			<input class="w3-input w3-border" name="user" type="text">
+		 </div> 
+		 
+		 
+		  <div class="w3-hover-text-red">
+			<label>Create Password</label>
+			<input class="w3-input w3-border" name="pass" type="password">
+		 </div> 
+		 
+		 
+		 <div class="w3-hover-text-red">
+			<label>Re-Enter Password</label>
+			<input class="w3-input w3-border" name="repass" type="password">
+		 </div>
+ </div>
+ </div>
+<div class="mov">
+
+<button class="w3-btn w3-teal w3-hover-indigo miv">Create Account</button>
+</div>
+
+
+
+
+
+
+</div>
+</form>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off w3-margin-top">
+  <a href="#home" class="w3-btn w3-padding w3-light-grey w3-hover-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+    <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  </div>
+
+</footer>
+
+
+<script>
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+
+</script>
+
+</body>
+</html>
+	

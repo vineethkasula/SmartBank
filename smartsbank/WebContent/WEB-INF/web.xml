@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+<display-name>smartsbank</display-name>
+<welcome-file-list>
+<welcome-file>newHome.html</welcome-file>
+<welcome-file>new_login.html</welcome-file>
+</welcome-file-list>
+</web-app>

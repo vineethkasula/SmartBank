@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> LOGIN</title>
+<link rel="icon" href="fevi.png" type="image/gif" sizes="16x16">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+
+
+
+/*div main for form  */
+
+.con{
+height:600px;
+width:100%;
+background-image: url('p.jpg'); //normally p
+background-repeat: no-repeat;
+
+
+}
+
+
+/* center the form */
+.cen{
+	width:45%;
+
+}
+
+
+.w3-top{
+background-color: #EADDC0;
+}
+
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+    </li>
+    <li class="w3-left-align"><a href="newHome.html">HOME</a></li>
+    <li class="w3-hide-small"><a href="#about"><i class="fa fa-user"></i> ABOUT</a></li>
+    <li class="w3-hide-small"><a href="#banksmart"><i class="fa fa-handshake-o"></i> CUSTOMER CARE</a></li>
+
+	<!-- create a dropdown PAYMENTS -->
+    <li class="w3-hide-small"><a href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-credit-card-alt"></i> MAKE PAYMENTS</a></li>
+
+	<!-- create a dropdown -->
+
+	<!--<li class="w3-hide-small"><a href="javascript:void(0)" onclick="w3_open()"> <i class="fa fa-desktop"></i> APPLY NOW</a></li>    -->
+
+	    <!-- MENU OF Inside dropdown -->
+
+			<nav class="w3-dropnav w3-card-2 w3-col-l3-l10" style="display:none; background-color:black;" id="myDropnav1">
+			  <div class="w3-container">
+			  <span onclick="w3_close()" class="w3-closebtn w3-xlarge" title="Close Menu">&times;</span>
+			  </div>
+			  <div class="w3-row-padding w3-padding-bottom">
+				<div class="w3-third">
+				<h3>LOANS</h3>
+				<a href="#">PERSONAL</a>
+				<a href="#">GOLD LOAN</a>
+				<a href="#">EDUCATION LOAN</a>
+				<a href="#">HOME LOAN</a>
+				</div>
+				<div class="w3-third">
+				<h3>INSURANCE</h3>
+				<a href="#">HEALTH</a>
+				<a href="#">TRAVEL</a>
+				<a href="#">LIFE INSURANCE</a>
+				</div>
+				<div class="w3-third">
+				<h3>DEPOSITS</h3>
+				<a href="#">FIXED DEPOSITS</a>
+				<a href="#">RECYRRING DEPOSITS</a>
+				</div>
+			  </div>
+			  <br>
+			</nav>
+
+
+			<!-- MENU OF Inside dropdown FOR PAYMENTS -->
+
+
+			<nav class="w3-dropnav w3-card-2 w3-col-l3-l10 accordion" style="display:none;background-color:black;color:white;" id="myDropnav">
+			  <div class="w3-container">
+			  <span onclick="w3_close()" class="w3-closebtn w3-xlarge" title="Close Menu">&times;</span>
+			  </div>
+			  <div class="w3-row-padding w3-padding-bottom">
+				<div class="w3-third">
+				<h3>RECHARGE</h3>
+				<a href="#">PRE-PAID MOBILE</a>
+				<a href="#">DTH</a>
+				<a href="#">DATA CARD</a>
+				<a href="#">TOLL</a>
+				</div>
+				<div class="w3-third">
+				<h3>PAY BILLS</h3>
+				<a href="#">MOBILE</a>
+				<a href="#">ELECTRICITY</a>
+				<a href="#">CREDIT CARD</a>
+				</div>
+				<div class="w3-third">
+				<h3>DEPOSITS</h3>
+				<a href="#">FIXED DEPOSITS</a>
+				<a href="#">RECYRRING DEPOSITS</a>
+				</div>
+			  </div>
+			  <br>
+			</nav>
+
+
+
+
+
+    <li class="w3-hide-small w3-right">
+      <a href="#" class="w3-hover-red">
+        <i class="fa fa-search"></i>
+      </a>
+    </li>
+  </ul>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+    <ul class="w3-navbar w3-left-align w3-white">
+      <li><a href="#about" onclick="toggleFunction()">ABOUT</a></li>
+      <li><a href="#custmorcare" onclick="toggleFunction()">CUSTMOR CARE</a></li>
+      <li><a href="javascript:void(0)" onclick="w3_open()">MAKE PAYMENTS</a></li>
+
+      <li><a href="#">SEARCH</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+
+
+<!-- Container (FORM) -->
+
+
+<div  class="con">
+
+
+<div class="w3-hover-shadow w3-center w3-display-middle cen">
+
+<form class="w3-container w3-card-4" action="Welcome.jsp" method="get">
+
+  <p>
+  <label class="w3-text-blue w3-hover-text-black"><b>User Name</b></label>
+  <input class="w3-input w3-border" name="first" type="text" required placeholder="USER NAME"></p>
+  <p>
+  <label class="w3-text-blue w3-hover-text-black"><b>Password</b></label>
+  <input class="w3-input w3-border" name="last" type="password" required placeholder="PASSWORD"></p>
+  <p>
+  <button class="w3-btn w3-blue-gray w3-hover-black">LOGIN</button>
+  </p>
+  <a href=pass.html style="text-decoration: none;" class="w3-animate-top w3-hover-text-black"> forgot password</a></br>
+  <a href=change.html style="text-decoration: none;" class="w3-animate-top w3-hover-text-black"> change password</a>
+  
+</form>
+
+</div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"">
+  
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+    <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+    <p>Developed by karthik kasula</p>
+  </div>
+
+</footer>
+
+
+<script>
+
+
+
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// For dropdown navigation bar
+var x = document.getElementById("myDropnav");
+function w3_open1() {
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+function w3_close() {
+    x.className = x.className.replace(" w3-show", "");
+}
+
+var x = document.getElementById("myDropnav");
+function w3_open() {
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+function w3_close() {
+    x.className = x.className.replace(" w3-show", "");
+}
+</script>
+
+</body>
+</html>
